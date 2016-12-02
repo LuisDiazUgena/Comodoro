@@ -3,10 +3,10 @@
 #include "LedControl.h"
 
 
-#define  MAX_DEVICES 1
-#define CLK_PIN   13
-#define DATA_PIN  11
-#define CS_PIN    12
+#define	MAX_DEVICES	1
+#define	CLK_PIN		13
+#define	DATA_PIN	11
+#define	CS_PIN		12
 
 LedControl LM = LedControl(DATA_PIN, CLK_PIN, CS_PIN, MAX_DEVICES);
 
@@ -342,4 +342,3 @@ void blinkOpen(){
   LM.setLed(0,6,4,true);
   delay(delayBlink);
 }
-
